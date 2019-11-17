@@ -4,4 +4,4 @@ Auth::routes();
 
 Route::get('/', function() {
     return view('home');
-})->name('home');
+})->name('home')->middleware('auth');
