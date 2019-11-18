@@ -9,18 +9,33 @@
 @section('content')
     <div class="row">
         <div class="col-sm-12">
-            <table id="example2" class="table table-bordered table-hover dataTable" role="grid"
-                   aria-describedby="example2_info">
-                <thead>
-                <tr role="row">
-                    <th>a</th>
-                    <th>a</th>
-                </tr>
-                </thead>
-               <tbody></tbody>
-                <tfoot>
-                </tfoot>
-            </table>
+            <div class="card">
+                <div class="card-body">
+                    <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6"></div>
+                            <div class="col-sm-12 col-md-6"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table id="table" class="table table-bordered table-hover dataTable" role="grid"
+                                       aria-describedby="example2_info">
+                                    <thead>
+                                    <tr role="row">
+                                        <th>{{__("Nazwa")}}</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                    <tfoot>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
         </div>
     </div>
 @stop
@@ -30,9 +45,10 @@
             $('#table').DataTable({
                 processing: true,
                 serverSide: true,
+                searching: false,
+                paging: false,
                 ajax: '/project/get/all',
                 columns: [
-                    {data: 'id', name: 'id'},
                     {data: 'name', name: 'name'},
                 ]
             })
