@@ -174,8 +174,8 @@ return [
 
     'menu' => [
         [
-            'text'        => 'home',
-            'url'         => 'home',
+            'text'        => 'project',
+            'url'         => 'project',
             'icon'        => 'far fa-fw fa-file',
         ],
     ],
