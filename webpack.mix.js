@@ -12,7 +12,8 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .copy('node_modules/datatables.net/js/jquery.dataTables.js', 'public/dist/js')
-    .copy('node_modules/datatables.net-bs/js/dataTables.bootstrap.js', 'public/dist/js')
-    .copy('node_modules/datatables.net-bs/css/dataTables.bootstrap.css', 'public/dist/css')
+    .copy('node_modules/datatables.net/js/jquery.dataTables.js', 'public/js')
+    .copy('node_modules/datatables.net-dt/js/dataTables.dataTables.js', 'public/js')
+    .copy('node_modules/datatables.net-dt/css/jquery.dataTables.css', 'public/css')
+    .copy('node_modules/datatables.net-dt/images', 'public/images')
     .sass('resources/sass/app.scss', 'public/css');

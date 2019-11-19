@@ -43,6 +43,9 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#table').DataTable({
+                language: {
+                    "url": "json/datatables/Polish.json"
+                },
                 processing: true,
                 serverSide: true,
                 searching: false,
