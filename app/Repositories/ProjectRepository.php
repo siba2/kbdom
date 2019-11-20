@@ -8,7 +8,9 @@
 
 namespace App\Repositories;
 
-class ProjectRepository extends BaseRepository implements IptableNodeRepositoryInterface {
+use App\Repositories\Interfaces\ProjectRepositoryInterface;
+
+class ProjectRepository extends BaseRepository implements ProjectRepositoryInterface {
     public function __construct() {
         parent::__construct(app('App\Project'));
     }
