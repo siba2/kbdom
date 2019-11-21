@@ -39,6 +39,6 @@ class ProjectController extends Controller
     }
 
     public function getAll(){
-        return DataTables::of($this->projectRepository::all())->make();
+        return DataTables::of($this->projectRepository->all())->make();
     }
 }

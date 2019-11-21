@@ -60,28 +60,18 @@ class BaseRepository implements Repository {
 
     /**
      * @param array $attributes
-     * @param bool $addUserInfo
-     * @return \Illuminate\Database\Eloquent\Collection|Model[]
+     * @return mixed
      */
-    public function create(array $attributes, bool $addUserInfo = true) {
-        if ($addUserInfo) {
-            $attributes['created_by'] =  'testS';
-        }
-
+    public function create(array $attributes) {
         return $this->model->create($attributes);
     }
 
     /**
      * @param array $attributes
      * @param $id
-     * @param bool $addUserInfo
      * @return bool
      */
-    public function update(array $attributes, $id, bool $addUserInfo = true) {
-        if ($addUserInfo) {
-            $attributes['updated_by'] = (Auth::user()->fullname ?? null);
-        }
-
+    public function update(array $attributes, $id) {
         $model = $this->find($id, ['*']);
 
         return $model->update($attributes);
