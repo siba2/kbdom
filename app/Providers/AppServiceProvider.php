@@ -74,6 +74,11 @@ class AppServiceProvider extends ServiceProvider
                     ]
                 ]
             ]);
+            $event->menu->add([
+                'text' => __("Pracownicy"),
+                'url' => route('employee'),
+                'icon' => '',
+            ]);
         });
     }
 }

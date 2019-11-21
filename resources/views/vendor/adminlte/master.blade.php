@@ -10,7 +10,7 @@
     @if(! config('adminlte.enabled_laravel_mix'))
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/jquery.dataTables.css') }}">
+
     @include('adminlte::plugins', ['type' => 'css'])
 
     @yield('adminlte_css_pre')
@@ -23,6 +23,18 @@
     @else
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @endif
+    <link rel="stylesheet" href="{{ asset('css/jquery.dataTables.css') }}">
+    <style>
+        table.dataTable thead th {
+            border-bottom: 0;
+        }
+        table.dataTable tfoot th {
+            border-top: 0;
+        }
+        table.dataTable.no-footer {
+            border-bottom: 0;
+        }
+    </style>
 </head>
 <body class="@yield('classes_body')" @yield('body_data')>
 
@@ -32,8 +44,7 @@
 <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
-<script src="{{ asset('js/jquery.dataTables.js') }}"></script>
-<script src="{{ asset('js/dataTables.dataTables.js') }}"></script>
+
 
 @include('adminlte::plugins', ['type' => 'js'])
 
@@ -41,6 +52,9 @@
 @else
 <script src="{{ asset('js/app.js') }}"></script>
 @endif
+<script src="{{ asset('js/dataTables.dataTables.js') }}"></script>
+<script src="{{ asset('js/jquery.dataTables.js') }}"></script>
+
 
 </body>
 </html>

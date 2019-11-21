@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0123d7f1-98f6-4ca4-ba41-2767bfb63936" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/employee/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,24 +20,6 @@
     <execution>
       <executable />
     </execution>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Change Pass</find>
-      <find>change_password</find>
-      <find>home&quot;</find>
-      <find>menu</find>
-      <find>en</find>
-      <find>pages</find>
-      <find>lang</find>
-      <find>s</find>
-      <find>search</find>
-      <find>data</find>
-      <find>app.js</find>
-      <find>enabled_laravel_mix</find>
-      <find>nm</find>
-      <find>7.2</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,18 +125,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projekty\kbdom\app\Http\Controllers" />
       <recent name="D:\projekty\kbdom\app\Repositories" />
       <recent name="D:\projekty\kbdom\app\Transformers" />
       <recent name="D:\projekty\kbdom\app\Repositories\Interfaces" />
       <recent name="$PROJECT_DIR$/app/Transformers" />
-      <recent name="$PROJECT_DIR$/app/Repositories" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -185,7 +170,8 @@
       <workItem from="1574013322049" duration="3682000" />
       <workItem from="1574092983256" duration="5910000" />
       <workItem from="1574159509685" duration="759000" />
-      <workItem from="1574343882255" duration="5011000" />
+      <workItem from="1574343882255" duration="5218000" />
+      <workItem from="1574349533096" duration="5755000" />
     </task>
     <servers />
   </component>
@@ -197,7 +183,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
