@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\ServiceProvider;
+use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -49,10 +51,29 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      *
+     * @param Dispatcher $events
      * @return void
      */
-    public function boot()
+    public function boot(Dispatcher $events)
     {
-        //
+        $events->listen(BuildingMenu::class, function (BuildingMenu $event) {
+            $event->menu->add('Menu');
+            $event->menu->add([
+                'text' => __("Harmonogram"),
+                'icon' => '',
+                'submenu' => [
+                    [
+                        'text' =>  __("Dzienny"),
+                        'url' => route('project'),
+                        'icon' => '',
+                    ],
+                    [
+                        'text' =>  __("Tygodniowy"),
+                        'url' => route('project'),
+                        'icon' => '',
+                    ]
+                ]
+            ]);
+        });
     }
 }
