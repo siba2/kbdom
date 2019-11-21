@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0123d7f1-98f6-4ca4-ba41-2767bfb63936" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_134613_create_assortment_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_134807_create_contractor_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_134915_create_agreement_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_135232_create_order_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_135354_create_employee_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_135444_create_absence_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Workplace.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_143310_create_workplace_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/BaseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BaseRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_21_134613_create_assortment_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_134613_create_assortment_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_21_134807_create_contractor_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_134807_create_contractor_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_21_134915_create_agreement_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_134915_create_agreement_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_21_135232_create_order_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_135232_create_order_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_21_135354_create_employee_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_135354_create_employee_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_21_135444_create_absence_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_135444_create_absence_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +192,7 @@
       <workItem from="1574013322049" duration="3682000" />
       <workItem from="1574092983256" duration="5910000" />
       <workItem from="1574159509685" duration="759000" />
-      <workItem from="1574343882255" duration="1015000" />
+      <workItem from="1574343882255" duration="2976000" />
     </task>
     <servers />
   </component>

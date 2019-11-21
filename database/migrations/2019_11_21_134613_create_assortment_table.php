@@ -15,7 +15,8 @@ class CreateAssortmentTable extends Migration
     {
         Schema::create('assortment', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            $table->string('name');
+            $table->enum('iu', ['szt', 'm2']);
         });
     }
 

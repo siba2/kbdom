@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAgreementTable extends Migration
+class CreateWorkplaceTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateAgreementTable extends Migration
      */
     public function up()
     {
-        Schema::create('agreement', function (Blueprint $table) {
+        Schema::create('workplace', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('contractor_id');
             $table->string('name');
-
-            $table->foreign('contractor_id')->references('id')->on('contractor');
         });
     }
 
@@ -29,6 +26,6 @@ class CreateAgreementTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('agreement');
+        Schema::dropIfExists('workplace');
     }
 }

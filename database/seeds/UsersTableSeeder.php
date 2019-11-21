@@ -15,7 +15,7 @@ class UsersTableSeeder extends Seeder
         if (!$this->userExists()) {
             User::create([
                 'name' => 'Admin',
-                'email' => 'admin@nowatel.com',
+                'email' => 'adam.goyke@kbdom.pl',
                 'password' => bcrypt('admin'),
             ]);
         }

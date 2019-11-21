@@ -15,7 +15,7 @@ class CreateContractorTable extends Migration
     {
         Schema::create('contractor', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            $table->string('name');
         });
     }
 

@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Contractor extends Model
+class Workplace extends Model
 {
-    protected $table = 'contractor';
+    protected $table = 'workplace';
     protected $fillable = ["name"];
     public $timestamps = false;
 }
