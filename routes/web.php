@@ -2,16 +2,21 @@
 
 Auth::routes();
 
-Route::get('/', function() {
-    return view('home');
-})->name('home')->middleware('auth');
+Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
 
-Route::prefix('/project')->middleware('auth')->group(function () {
-    Route::get('/', 'ProjectController@index')->name('project');
-    Route::get('/get/all', 'ProjectController@getAll')->name('project.get.all');
+Route::prefix('/assortment')->middleware('auth')->group(function () {
+    Route::get('/', 'AssortmentController@index')->name('assortment');
+    Route::get('/get/all', 'AssortmentController@getAll')->name('assortment.get.all');
 });
 
-Route::prefix('/employee')->middleware('auth')->group(function () {
-    Route::get('/', 'EmployeeController@index')->name('employee');
-    Route::get('/get/all', 'EmployeeController@getAll')->name('employee.get.all');
+Route::prefix('/contractor')->middleware('auth')->group(function () {
+    Route::get('/', 'ContractorController@index')->name('contractor');
+    Route::get('/get/all', 'ContractorController@getAll')->name('contractor.get.all');
+});
+
+Route::prefix('/schedule')->middleware('auth')->group(function () {
+    Route::get('/', 'ScheduleController@index')->name('schedule');
+    Route::get('/day', 'ScheduleController@index')->name('schedule.day');
+    Route::get('/week', 'ScheduleController@index')->name('schedule.week');
+    Route::get('/get/all', 'ScheduleController@getAll')->name('schedule.get.all');
 });

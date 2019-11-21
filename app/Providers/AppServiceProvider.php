@@ -59,24 +59,34 @@ class AppServiceProvider extends ServiceProvider
         $events->listen(BuildingMenu::class, function (BuildingMenu $event) {
             $event->menu->add('Menu');
             $event->menu->add([
+                'text' => __("Strona główna"),
+                'url' => route('home'),
+                'icon' => '',
+            ]);
+            $event->menu->add([
                 'text' => __("Harmonogram"),
                 'icon' => '',
                 'submenu' => [
                     [
                         'text' =>  __("Dzienny"),
-                        'url' => route('project'),
+                        'url' => route('schedule.day'),
                         'icon' => '',
                     ],
                     [
                         'text' =>  __("Tygodniowy"),
-                        'url' => route('project'),
+                        'url' => route('schedule.week'),
                         'icon' => '',
                     ]
                 ]
             ]);
             $event->menu->add([
-                'text' => __("Pracownicy"),
-                'url' => route('employee'),
+                'text' => __("Kontrahenci"),
+                'url' => route('contractor'),
+                'icon' => '',
+            ]);
+            $event->menu->add([
+                'text' => __("Asortyment"),
+                'url' => route('assortment'),
                 'icon' => '',
             ]);
         });

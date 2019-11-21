@@ -15,10 +15,8 @@ class CreateAbsenceTable extends Migration
     {
         Schema::create('absence', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('employee_id');
+            $table->integer('quantity');
             $table->date('date');
-
-            $table->foreign('employee_id')->references('id')->on('employee');
         });
     }
 
