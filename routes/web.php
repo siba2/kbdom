@@ -3,6 +3,8 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::post('/home/employee/update', 'HomeController@updateEmployee')->name('home.update.employee');
+
 
 //TODO: dodać ->middleware('auth')
 
