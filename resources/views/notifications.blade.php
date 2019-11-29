@@ -1,75 +1,31 @@
 @if ($message = Session::get('success'))
-    <div class="box box-success box-solid">
-        <div class="box-header with-border">
-            <h3 class="box-title">{{ __('t_messages.header.success') }}</h3>
-
-            <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-            </div>
-            <!-- /.box-tools -->
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-            {{ $message }}
-        </div>
-        <!-- /.box-body -->
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4><i class="icon fa fa-info"></i>{{__("Wiadomość")}}</h4>
+        {{ $message }}
     </div>
-    <!-- /.box -->
 @endif
 
 @if ($message = Session::get('error'))
-    <div class="box box-danger box-solid">
-        <div class="box-header with-border">
-            <h3 class="box-title">{{ __('t_messages.header.error') }}</h3>
-
-            <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-            </div>
-            <!-- /.box-tools -->
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-            {{ $message }}
-        </div>
-        <!-- /.box-body -->
+    <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4><i class="icon fa fa-info"></i>{{__("Wiadomość")}}</h4>
+        {{ $message }}
     </div>
-    <!-- /.box -->
 @endif
 
 @if ($message = Session::get('warning'))
-    <div class="box box-warning box-solid">
-        <div class="box-header with-border">
-            <h3 class="box-title">{{ __('t_messages.header.warning') }}</h3>
-
-            <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-            </div>
-            <!-- /.box-tools -->
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-            {{ $message }}
-        </div>
-        <!-- /.box-body -->
+    <div class="alert alert-warning alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4><i class="icon fa fa-info"></i>{{__("Wiadomość")}}</h4>
+        {{ $message }}
     </div>
-    <!-- /.box -->
 @endif
 
 @if ($message = Session::get('info'))
-    <div class="box box-info box-solid">
-        <div class="box-header with-border">
-            <h3 class="box-title">{{ __('t_messages.header.info') }}</h3>
-
-            <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-            </div>
-            <!-- /.box-tools -->
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-            {{ $message }}
-        </div>
-        <!-- /.box-body -->
+    <div class="alert alert-info alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4><i class="icon fa fa-info"></i>{{__("Wiadomość")}}</h4>
+        {{ $message }}
     </div>
-    <!-- /.box -->
 @endif

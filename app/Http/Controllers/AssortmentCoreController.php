@@ -6,6 +6,8 @@ use DB;
 use App\Http\Requests\AssortmentStore;
 use App\Repositories\Interfaces\AssortmentRepositoryInterface;
 use App\Transformers\AssortmentTransformer;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Yajra\DataTables\DataTables;
 
 class AssortmentCoreController extends Controller {
@@ -34,7 +36,7 @@ class AssortmentCoreController extends Controller {
             $this->assortmentRepository->delete($id);
         });
 
-        return redirect()->to('assortment');
+        return redirect()->to('assortment')->with('success', __("Pomyślnie usunięto wpis."));
     }
 
     public function store(AssortmentStore $request) {
@@ -44,7 +46,7 @@ class AssortmentCoreController extends Controller {
 
         });
 
-        return redirect()->to('assortment');
+        return redirect()->to('assortment')->with('success', __("Pomyślnie dodano wpis."));
     }
 
     public function update(AssortmentStore $request, $id) {
@@ -54,11 +56,12 @@ class AssortmentCoreController extends Controller {
 
         });
 
-        return redirect()->to('assortment');
+        return redirect()->to('assortment')->with('success', __("Pomyślnie edytowano wpis."));
     }
 
-    public function getAll() {
+    public function getAll(Request $request) {
         return DataTables::of($this->assortmentRepository->all())
+
             ->addColumn('options', function ($assortment) {
                 $view = view('assortment.components.options')
                     ->with('id', $assortment->id);

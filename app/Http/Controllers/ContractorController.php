@@ -6,7 +6,6 @@ use DB;
 use App\Http\Requests\ContractorStore;
 use App\Repositories\Interfaces\ContractorRepositoryInterface;
 use App\Transformers\ContractorTransformer;
-use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
 class ContractorController extends Controller {
@@ -32,7 +31,7 @@ class ContractorController extends Controller {
 
     public function delete($id) {
         DB::transaction(function () use (&$id) {
-            $this->contractorRepository->delete($id);
+            $this->contractorRepository->delete($id)->with('success', __("Pomyślnie usunięto wpis."));
         });
 
         return redirect()->to('contractor');
@@ -41,7 +40,7 @@ class ContractorController extends Controller {
     public function store(ContractorStore $request) {
         DB::transaction(function () use ($request) {
             $attributes = ContractorTransformer::transform($request)->intoFillableArray($this->contractorRepository->getFillable());
-            $this->contractorRepository->create($attributes);
+            $this->contractorRepository->create($attributes)->with('success', __("Pomyślnie dodano wpis."));
 
         });
 
@@ -51,7 +50,7 @@ class ContractorController extends Controller {
     public function update(ContractorStore $request, $id) {
         DB::transaction(function () use ($request, &$id) {
             $attributes = ContractorTransformer::transform($request)->intoFillableArray($this->contractorRepository->getFillable());
-            $this->contractorRepository->update($attributes, $id);
+            $this->contractorRepository->update($attributes, $id)->with('success', __("Pomyślnie edytowano wpis."));
 
         });
 

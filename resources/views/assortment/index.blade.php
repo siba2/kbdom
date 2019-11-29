@@ -9,20 +9,26 @@
     </h1>
 @stop
 @section('content')
+    @include('notifications')
     <div class="card">
         <div class="card-header">
-            <a href="{{route('assortment.create')}}" class="btn btn-primary" role="button">{{ __('Dodaj asortyment') }}</a>
+            <a href="{{route('assortment.create')}}" class="btn btn-primary"
+               role="button">{{ __('Dodaj asortyment') }}</a>
         </div>
         <!-- /.card-header -->
         <div class="card-body p-0">
             <table id="table" class="table">
                 <thead>
                 <tr>
+
+                    <th></th>
+                </tr>
+                <tr>
                     <th><b>{{__("Nazwa")}}</b></th>
                     <th></th>
                 </tr>
                 </thead>
-             <tbody></tbody>
+                <tbody></tbody>
             </table>
         </div>
         <!-- /.card-body -->
@@ -40,11 +46,19 @@
                 serverSide: true,
                 searching: false,
                 paging: false,
+                data: function (data) {
+                  //  data.inputName = $('.input-name').val();
+                },
                 ajax: '{{route('assortment.get.all')}}',
                 columns: [
                     {data: 'name', name: 'name'},
                     {data: 'options', name: 'options', orderable: false, searchable: false},
                 ]
+            })
+            $('.filter-input').keyup(function () {
+                table.column($(this).data('column'))
+                    .search($(this).val())
+                    .draw();
             })
         })
     </script>

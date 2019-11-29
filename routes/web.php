@@ -30,7 +30,6 @@ Route::prefix('/contractor')->group(function () {
 
 Route::prefix('/schedule')->group(function () {
     Route::get('/', 'ScheduleController@index')->name('schedule');
-    Route::get('/day', 'ScheduleController@index')->name('schedule.day');
-    Route::get('/week', 'ScheduleController@index')->name('schedule.week');
-    Route::get('/get/all', 'ScheduleController@getAll')->name('schedule.get.all');
+    Route::get('/day', 'ScheduleController@day')->name('schedule.day');
+    Route::get('/week', 'ScheduleController@week')->name('schedule.week');
 });
