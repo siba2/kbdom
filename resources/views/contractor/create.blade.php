@@ -11,9 +11,9 @@
         <div class="col-md-12">
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">{{ __('Edytuj asortyment') }}</h3>
+                    <h3 class="card-title">{{ __('Dodaj kontrahenta') }}</h3>
                 </div>
-            @include('assortment/forms/edit')
+            @include('contractor/forms/create')
             <!-- ./box-body -->
             </div>
             <!-- ./box -->

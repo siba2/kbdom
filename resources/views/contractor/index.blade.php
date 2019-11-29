@@ -5,13 +5,13 @@
 @section('content_header')
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <h1>
-        {{ __('Asortymenty') }}
+        {{ __('Kontraktorzy') }}
     </h1>
 @stop
 @section('content')
     <div class="card">
         <div class="card-header">
-            <a href="{{route('assortment.create')}}" class="btn btn-primary" role="button">{{ __('Dodaj asortyment') }}</a>
+            <a href="{{route('contractor.create')}}" class="btn btn-primary" role="button">{{ __('Dodaj kontrahtora') }}</a>
         </div>
         <!-- /.card-header -->
         <div class="card-body p-0">
@@ -40,7 +40,7 @@
                 serverSide: true,
                 searching: false,
                 paging: false,
-                ajax: '{{route('assortment.get.all')}}',
+                ajax: '{{route('contractor.get.all')}}',
                 columns: [
                     {data: 'name', name: 'name'},
                     {data: 'options', name: 'options', orderable: false, searchable: false},

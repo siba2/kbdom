@@ -12,6 +12,6 @@ use App\Repositories\Interfaces\ContractorRepositoryInterface;
 
 class ContractorRepository extends BaseRepository implements ContractorRepositoryInterface {
     public function __construct() {
-        parent::__construct(app('App\Conractor'));
+        parent::__construct(app('App\Contractor'));
     }
 }

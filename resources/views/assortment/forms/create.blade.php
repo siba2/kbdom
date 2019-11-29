@@ -1,3 +1,4 @@
-<form method="post"  action="/regions/store" >
-    @include('regions/forms/body')
+<form method="post"  action="/assortment/store" >
+    {{ csrf_field() }}
+    @include('assortment/forms/body')
 </form>

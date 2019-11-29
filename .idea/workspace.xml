@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0123d7f1-98f6-4ca4-ba41-2767bfb63936" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AssortmentCoreController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContractorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assortment/components/options.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contractor/components/options.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contractor/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contractor/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contractor/forms/body.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contractor/forms/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contractor/forms/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contractor/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/ContractorRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ContractorRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assortment/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assortment/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assortment/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assortment/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assortment/forms/body.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assortment/forms/body.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assortment/forms/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assortment/forms/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assortment/forms/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assortment/forms/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assortment/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assortment/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,16 +46,80 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContractorController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+              <folding>
+                <element signature="e#40#47#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/assortment/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/AssortmentStore.php">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AssortmentCoreController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-525">
+              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>{{ csrf_field() }}</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/resources/views/assortment/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/assortment/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/assortment/forms/body.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/assortment/forms/createblade.php" />
+        <option value="$PROJECT_DIR$/resources/views/assortment/forms/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/notifications.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProjecAtController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AController.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/ContractorRepository.php" />
+        <option value="$PROJECT_DIR$/resources/views/contractor/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/contractor/forms/body.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/contractor/forms/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/contractor/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/ContractorStore.php" />
+        <option value="$PROJECT_DIR$/resources/views/contractor/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/contractor/forms/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/contractor/components/options.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/assortment/components/options.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AssortmentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AssortmentAController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AssortmentCoreController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ContractorController.php" />
+      </list>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -134,6 +213,12 @@
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
     </include_path>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
   <component name="ProjectId" id="1Tvc6dTFGddbXe2b9mXSIAZbjND" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -143,13 +228,67 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
               <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+              <item name="datatables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
@@ -169,10 +308,39 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="assortment" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="assortment" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="assortment" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="contractor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbdom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbdom" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,18 +349,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projekty\kbdom\app\Http\Controllers" />
-      <recent name="D:\projekty\kbdom\resources\views\assortment" />
-      <recent name="D:\projekty\kbdom\app\Repositories" />
-      <recent name="D:\projekty\kbdom\app\Transformers" />
-      <recent name="D:\projekty\kbdom\app\Repositories\Interfaces" />
+      <recent name="$PROJECT_DIR$/app/Http/Requests" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/resources/views/assortment" />
+      <recent name="$PROJECT_DIR$/resources/views/contractor/forms" />
+      <recent name="$PROJECT_DIR$/resources/views/contractor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -229,17 +398,20 @@
       <workItem from="1574343882255" duration="5218000" />
       <workItem from="1574349533096" duration="6603000" />
       <workItem from="1574357243114" duration="2303000" />
+      <workItem from="1575014396835" duration="2963000" />
+      <workItem from="1575019877561" duration="297000" />
+      <workItem from="1575022511009" duration="796000" />
+      <workItem from="1575024513148" duration="4092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237000" />
+    <option name="totallyTimeSpent" value="8666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1853" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21527393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2257886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -254,7 +426,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32715377" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3642312" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -305,7 +477,191 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/assortment/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/assortment/forms/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/assortment/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/notifications.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AssortmentControllerphp" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjecAtController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AssortmentCoreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/ContractorRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/contractor/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/json/datatables/Polish.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Contractor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ContractorStore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/contractor/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="13" column="124" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/assortment/forms/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="91" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/contractor/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/contractor/forms/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/contractor/forms/body.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/contractor/components/options.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/contractor/forms/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/assortment/forms/body.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/assortment/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/assortment/components/options.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AssortmentCoreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContractorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="e#40#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/AssortmentStore.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
